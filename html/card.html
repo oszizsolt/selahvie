@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="cardstyle.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Selah Vie</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Merch</a></li>
+            <li><a href="#">Stream</a></li>
+        </ul>
+    </header>
+
+    <section class="main-section">
+        <img src="/scene/stars.png" id="stars">
+        <img src="/scene/moon.png" id="moon">
+        <img src="selahvie-cutouts/sitting-best.png" id="behind">
+        <h2 id="text">Greatest Hits</h2>
+        <a href="#sec" id="btn">Buy</a>
+        <a href="#sec" id="btn">Stream</a>
+        <img src="selahvie-cutouts/mountains_front-4.png" id="mountains_front">
+    </section>
+    <section>
+    <div class="sec" id="sec">
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Petrőcz Jonatán</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Dobránszky Rafael</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Horváth Noémi</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
+</body>
+</html>
